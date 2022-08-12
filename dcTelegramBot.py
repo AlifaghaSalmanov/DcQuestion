@@ -17,14 +17,14 @@ players = (
 players_name = list(players.keys())  # Oyunçuların adlarının sırası
 truth_questions = (
     requests.get(
-        "https://raw.githubusercontent.com/ElifagaSalmanov/demo/main/DogruluqSualları.txt"
+        "https://raw.githubusercontent.com/AlifaghaSalmanov/DcTelegramBot/main/DogruluqSuallarFlitertxt"
     )
     .text[:-1]
     .split("\n")
 )  # Dogruluq sualları
 dare_questions = (
     requests.get(
-        "https://raw.githubusercontent.com/ElifagaSalmanov/demo/main/CesaretSualları.txt"
+        "https://raw.githubusercontent.com/AlifaghaSalmanov/DcTelegramBot/main/CesaretSuallar.txt"
     )
     .text[:-1]
     .split("\n")
