@@ -5,7 +5,7 @@ import requests
 from random import randint, shuffle
 
 bot = Bot(
-    token="5387222261:AAH5UW5JoUeyJqWma0pXvjzm7dIPN2560t8"
+    token="<API-Token>"
 )  # BotFather-ın verdiyi token
 dp = Dispatcher(bot)
 
