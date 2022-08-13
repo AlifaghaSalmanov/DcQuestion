@@ -17,7 +17,7 @@ players = (
 players_name = list(players.keys())  # Oyunçuların adlarının sırası
 truth_questions = (
     requests.get(
-        "https://raw.githubusercontent.com/AlifaghaSalmanov/DcTelegramBot/main/DogruluqSuallarFlitertxt"
+        "https://raw.githubusercontent.com/AlifaghaSalmanov/DcTelegramBot/main/DogruluqSuallarFliter.txt"
     )
     .text[:-1]
     .split("\n")
