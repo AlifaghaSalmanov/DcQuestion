@@ -99,7 +99,12 @@ def randomPlayer():
     players_name = list(players.keys())
     shuffle(players_name)
 
-
+# Oyunçuların oynama sırası
+@dp.message_handler(commands=["order"])
+async def queue(message: types.Message):
+    global players_name
+    await message.reply(text="Hazırki oynama sırası : \n" + ", ".join(players_name))
+    
 # start yazanda oyun başlama mesajları filan üçün
 @dp.message_handler(commands=["start"])
 async def start(message: types.Message):
